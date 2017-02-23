@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> As stated above, I will use sublime or Pycharm.  I will use these because I have been using them for quite some time and familiarity is important to me.  I like the darkula color scheme.
+>> As stated above, I will use sublime or Pycharm.  I will use these because I have been using them for quite some time and familiarity is important.  I like the darkula color scheme and use the various obvious shortcuts.
 
  
