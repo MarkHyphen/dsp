@@ -81,7 +81,7 @@ Upload these 3 files to the [`editors`](editors/) folder.
 
 What terminal editor will be your preferred choice of use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> When I have to use a terminal bound editor I will use vim because I have been trying to force myself to use it for the past six months.  However, I would much prefer to use sublime or phcharm whenever possible.
 
 --
 
@@ -89,6 +89,6 @@ What terminal editor will be your preferred choice of use? How did you make your
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> As stated above, I will use sublime or Pycharm.  I will use these because I have been using them for quite some time and familiarity is important to me.  I like the darkula color scheme.
 
  
