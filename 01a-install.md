@@ -54,7 +54,7 @@ Did you install Python 2 or 3? Why?
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> I run python 2.7.12 and python 3.5.2
+>> type in python -V or python3 -V at the cli.
 
  
 
