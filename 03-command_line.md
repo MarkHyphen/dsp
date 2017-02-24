@@ -71,6 +71,8 @@ What do the following commands do:
 > > ls -lah = list all contents in current working directory with extra info, hidden files, in human readable form  
 > > ls -t = list all content in current working directory sorted by last date modified  
 > > ls -Glp = list all content in current working directory with extra info and all directories having a slash for piping. Seems like the -G flag adds what group membership the files have.  
+
+
 ---
 
 ### Q3.  More List Files in Unix  
