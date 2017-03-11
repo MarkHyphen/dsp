@@ -3,6 +3,18 @@
 
 
 def match_ends(words):
+    count = 0
+    for str_value in words:
+        if len(str_value) != 0:
+            if (len(str_value) >= 2) & (str_value[0] == str_value[-1]):
+                count += 1
+    return count
+    """
+    I don't like this code.  I don't like having a nested if statement.  I know that
+
+    """
+
+
     """
     Given a list of strings, return the count of the number of strings
     where the string length is 2 or more and the first and last chars
@@ -15,10 +27,17 @@ def match_ends(words):
     >>> match_ends(['aaa', 'be', 'abc', 'hello'])
     1
     """
-    raise NotImplementedError
+    # raise NotImplementedError
 
 
 def front_x(words):
+    words.sort(reverse=True)
+    ind_x = []
+    [ind_x.append(i) for i, element in enumerate(words) if element[0] == 'x']
+    for x in range(len(ind_x)):
+        words.append(words.pop(ind_x[0]))
+    words.reverse()
+    return words
     """
     Given a list of strings, return a list with the strings in sorted
     order, except group all the strings that begin with 'x' first.
@@ -32,10 +51,12 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
-    raise NotImplementedError
+    # raise NotImplementedError
 
 
 def sort_last(tuples):
+    tuples = sorted(tuples, key=lambda x: x[-1])
+    return tuples
     """
     Given a list of non-empty tuples, return a list sorted in
     increasing order by the last element in each tuple.
@@ -49,10 +70,14 @@ def sort_last(tuples):
     >>> sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)])
     [(2, 2), (1, 3), (3, 4, 5), (1, 7)]
     """
-    raise NotImplementedError
+    # raise NotImplementedError
 
 
 def remove_adjacent(nums):
+    rep_inds = [i for i in range(1, len(nums)) if nums[i-1] == nums[i]]
+    for i in sorted(rep_inds, reverse=True):
+        del nums[i]
+    return nums
     """
     Given a list of numbers, return a list where all adjacent equal
     elements have been reduced to a single element, so [1, 2, 2, 3]
@@ -68,10 +93,22 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    # raise NotImplementedError
 
 
 def linear_merge(list1, list2):
+    merged_list=[]
+    while (len(list1) != 0) & (len(list2) != 0):
+        if list1[0] <= list2[0]:
+            merged_list.append(list1.pop(0))
+        else:
+            merged_list.append(list2.pop(0))
+    if len(list1) == 0:
+        merged_list.append(list2)
+    else:
+        merged_list.append(list1)
+    return merged_list
+
     """
     Given two lists sorted in increasing order, create and return a
     merged list of all the elements in sorted order. You may modify
